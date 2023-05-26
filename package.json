@@ -1,8 +1,8 @@
 {
-  "name": "chai-notes",
+  "name": "chaiAI",
   "private": true,
   "version": "1.0.0",
-  "author": "Dr. T",
+  "author": "Kristi Cornett",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

@@ -4,8 +4,9 @@ import Form from 'react-bootstrap/Form';
 import ChatCard from '../components/ChatCard';
 import PulsatingCard from '../components/PulsatingCard';
 import askChatGpt from '../api/chatGpt';
+import { useAuth } from '../utils/context/authContext';
 
-import '../styles/globals.css';
+//import '../styles/globals.css';
 
 export default function App() {
   const [formInput, setFormInput] = useState('');
@@ -17,6 +18,9 @@ export default function App() {
   // after response, update state (add response to end of array)
   // also capture user input in state (for now...)
   // show content on the DOM
+
+  const { user } = useAuth()
+  //console.log(user)
 
   const handleChange = (e) => {
     const { value } = e.target;
